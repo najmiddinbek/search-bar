@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
@@ -18,6 +20,7 @@ const getTopics = async () => {
     console.log("Error loading topics: ", error);
   }
 };
+
 
 export default async function TopicsList() {
   const a = await getTopics()
